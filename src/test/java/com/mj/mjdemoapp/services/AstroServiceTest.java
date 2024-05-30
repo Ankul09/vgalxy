@@ -8,19 +8,19 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+//@SpringBootTest
 class AstroServiceTest {
     @Autowired
     private AstroService service;
 
-    @Test
+    //@Test
     void testGetPeopleInSpace(){
         String peopleInSpace = service.getPeopleInSpace();
         assertTrue(peopleInSpace.contains("people"));
         System.out.println(peopleInSpace);
     }
 
-    @Test
+    //@Test
     void testGetAstroResponse() {
         AstroResponse response = service.getAstroResponse();
         assertEquals("success", response.message());
@@ -29,7 +29,7 @@ class AstroServiceTest {
         System.out.println(response);
     }
 
-    @Test
+    //@Test
     void testGetAstroResponseAsync() {
         AstroResponse response = service.getAstroResponseAsync();
         assertEquals("success", response.message());

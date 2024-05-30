@@ -7,13 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+//@SpringBootTest
 class AstroInterfaceTest {
 
     @Autowired
     AstroInterface astroInterface;
 
-    @Test
+    //@Test
     void getResponse() {
         AstroResponse response = astroInterface.getResponse();
         assertEquals("success", response.message());

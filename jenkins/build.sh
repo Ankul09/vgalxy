@@ -3,4 +3,4 @@
 pushd ../
 mvn clean package -DskipTests
 popd
-docker build -t devmj3/democicdapp ../
+#docker build -t devmj3/democicdapp ../
